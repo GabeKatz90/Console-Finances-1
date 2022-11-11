@@ -91,10 +91,16 @@ console.log("Financial Analysis\n----------------------------");
 
 // Variables
 var totalMonths;
-var totalNet;
+var totalNet = 0;
 var average;
 var increase;
 var decrease;
 
 // Displaying the total of months
-console.log("The total of months: " + finances.length)
+console.log("The total of months: " + finances.length);
+
+// Displaying the net of profit/losses
+for (let i = 0; i < finances.length; i++) {
+    totalNet =+ finances[i][1];
+}
+console.log("The net of profit/losses: $" + totalNet)
