@@ -7,3 +7,6 @@ I wanted to test my knownldge on JavaScript arrays, printing in the console, for
 ## Screenshot 📸
 This is the output of the console application: <br><br>
 ![image of the output of the console application](screenshot.png)
+
+## Link 🖱
+[Link to the deployed console app!](https://faeriecoder.github.io/Console-Finances/)
