@@ -94,6 +94,7 @@ var totalNet = 0;
 var average = 0;
 var increase;
 var decrease;
+var sorted;
 
 // Displaying the total of months
 console.log("The total of months: " + finances.length);
@@ -108,3 +109,13 @@ console.log("The net of profit/losses: $" + totalNet);
 average = totalNet / finances.length;
 average = Math.ceil(average / 100) * 100;
 console.log("The average of the changes: $" + average);
+
+// Displaying the greatest increase in profits:
+
+sorted = finances.sort((a, b) => a[1]-b[1]);
+increase = sorted[0];
+console.log(`The greatest increase in profits: ${increase[0]} ($${increase[1]})`);
+
+
+
+// Displaying the greatest decrease in profits:
