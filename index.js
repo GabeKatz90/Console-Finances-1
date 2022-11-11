@@ -111,11 +111,11 @@ average = Math.ceil(average / 100) * 100;
 console.log("The average of the changes: $" + average);
 
 // Displaying the greatest increase in profits:
-
-sorted = finances.sort((a, b) => a[1]-b[1]);
+sorted = finances.sort((a, b) => b[1]-a[1]);
 increase = sorted[0];
 console.log(`The greatest increase in profits: ${increase[0]} ($${increase[1]})`);
 
-
-
 // Displaying the greatest decrease in profits:
+sorted = finances.sort((a, b) => a[1]-b[1]);
+decrease = sorted[0];
+console.log(`The greatest decrease in profits: ${decrease[0]} ($${decrease[1]})`);
