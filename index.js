@@ -90,9 +90,8 @@ var finances = [
 console.log("Financial Analysis\n----------------------------");
 
 // Variables
-var totalMonths;
 var totalNet = 0;
-var average;
+var average = 0;
 var increase;
 var decrease;
 
@@ -103,4 +102,9 @@ console.log("The total of months: " + finances.length);
 for (let i = 0; i < finances.length; i++) {
     totalNet =+ finances[i][1];
 }
-console.log("The net of profit/losses: $" + totalNet)
+console.log("The net of profit/losses: $" + totalNet);
+
+// Displaying the average - rounding to nearest $100
+average = totalNet / finances.length;
+average = Math.ceil(average / 100) * 100;
+console.log("The average of the changes: $" + average);
