@@ -87,7 +87,7 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-console.log("Financial Analysis \n----------------------------");
+console.log("Financial Analysis\n----------------------------");
 
 // Variables
 var totalMonths;
@@ -95,3 +95,6 @@ var totalNet;
 var average;
 var increase;
 var decrease;
+
+// Displaying the total of months
+console.log("The total of months: " + finances.length)
