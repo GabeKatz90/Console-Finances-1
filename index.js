@@ -105,9 +105,9 @@ for (let i = 0; i < finances.length; i++) {
 }
 console.log("The net of profit/losses: $" + totalNet);
 
-// Displaying the average -> rounding to nearest $100
+// Displaying the average -> rounding to nearest 100th
 average = totalNet / finances.length;
-average = Math.ceil(average / 100) * 100;
+average = average.toFixed(2);
 console.log("The average of the changes: $" + average);
 
 // Displaying the greatest increase in profits -> researched how to to sort multidimensional arrays :)
